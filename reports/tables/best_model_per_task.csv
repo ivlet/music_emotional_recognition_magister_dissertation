@@ -1,0 +1,6 @@
+task_type,model_name,feature_type,accuracy,macro_f1,weighted_f1
+dynamic_window_classification,logistic_regression,dynamic_window_spectral,0.6001270354544405,0.4618230971303837,0.5726060841599065
+pretrained_embedding,ast_audioset_logistic_regression,pretrained_audio_embedding,0.6273062730627307,0.5417327012985691,0.6254116476468894
+sequence,transformer,mfcc_sequence,0.5940959409594095,0.5098285587725232,0.5864908835973213
+spectrogram,crnn,mel_spectrogram,0.6383763837638377,0.370702981229297,0.5409450134251066
+static,logistic_regression,spectral_aggregated,0.5645756457564576,0.4278842401848839,0.5452039881517895

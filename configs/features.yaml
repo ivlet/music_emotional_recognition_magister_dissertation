@@ -1,0 +1,113 @@
+# Feature extraction and emotion labelling settings
+
+emotion:
+  # Threshold mode for quadrant split: "median" or a numeric value in [-1, 1]
+  valence_threshold: median
+  arousal_threshold: median
+
+  # Quadrant labels (Russell circumplex, median-split)
+  class_names:
+    Q1: high_valence_high_arousal    # e.g. excited, happy
+    Q2: high_valence_low_arousal     # e.g. calm, relaxed
+    Q3: low_valence_high_arousal     # e.g. angry, tense
+    Q4: low_valence_low_arousal      # e.g. sad, depressed
+
+  class_order:
+    - Q1
+    - Q2
+    - Q3
+    - Q4
+
+static:
+  sample_rate: 22050
+  aggregations:
+    - mean
+    - std
+    - min
+    - max
+    - median
+  feature_groups:
+    mfcc:
+      n_mfcc: 20
+    chroma:
+      n_chroma: 12
+    spectral_centroid: {}
+    spectral_bandwidth: {}
+    spectral_rolloff: {}
+    zero_crossing_rate: {}
+    rms: {}
+    tempo: {}
+
+sequence:
+  sample_rate: 22050
+  frame_length: 2048
+  hop_length: 512
+  n_mfcc: 20
+  max_sequence_length: 1500
+
+spectrogram:
+  sample_rate: 22050
+  n_fft: 2048
+  hop_length: 512
+  n_mels: 128
+  fmin: 20
+  fmax: 8000
+  max_duration_sec: 45.0
+  normalize: true
+
+pretrained:
+  enabled: true
+  provider: huggingface
+  batch_size: 8
+  device: auto
+  cache_embeddings: true
+  allow_download: true   # set false after weights are cached locally
+
+  models:
+    - alias: ast_audioset
+      model_name: MIT/ast-finetuned-audioset-10-10-0.4593
+      backend: hf_automodel
+      sample_rate: 16000
+      max_duration_sec: 30.0
+      pooling: auto
+
+    - alias: mert_v1_95m
+      model_name: m-a-p/MERT-v1-95M
+      backend: mert_hf
+      sample_rate: 24000
+      max_duration_sec: 30.0
+      pooling: hidden_states_time_mean_last_layer
+      trust_remote_code: true
+
+    - alias: clap_htsat_unfused
+      model_name: laion/clap-htsat-unfused
+      backend: clap_hf
+      sample_rate: 48000
+      max_duration_sec: 30.0
+      pooling: get_audio_features
+
+dynamic:
+  sample_rate: 22050
+  # Window size and hop in seconds for window-level dynamic dataset
+  window_size_sec: 1.0
+  hop_size_sec: 0.5
+  # First N seconds of dynamic labels are unstable in DEAM (see dataset manual)
+  skip_initial_sec: 15.0
+  # Used only when the annotation time grid cannot be inferred from the CSV files
+  fallback_hz: null
+  aggregations:
+    - mean
+    - std
+    - min
+    - max
+    - median
+  feature_groups:
+    mfcc:
+      n_mfcc: 20
+    chroma:
+      n_chroma: 12
+    spectral_centroid: {}
+    spectral_bandwidth: {}
+    spectral_rolloff: {}
+    zero_crossing_rate: {}
+    rms: {}

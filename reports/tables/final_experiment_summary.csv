@@ -1,0 +1,75 @@
+experiment_group,task_type,model_name,feature_type,target_type,eval_split,accuracy,macro_f1,weighted_f1,mae,rmse,r2,comments
+static,static,logistic_regression,spectral_aggregated,emotion_quadrant,val,0.5444444444444444,0.3845119985275713,0.5185905189777805,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,logistic_regression,spectral_aggregated,emotion_quadrant,test,0.5645756457564576,0.4278842401848839,0.5452039881517895,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,knn,spectral_aggregated,emotion_quadrant,val,0.5518518518518518,0.4235051285880441,0.5334731404475679,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,knn,spectral_aggregated,emotion_quadrant,test,0.5645756457564576,0.4218101601908381,0.5395310144636318,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,svm,spectral_aggregated,emotion_quadrant,val,0.6148148148148148,0.366856234347433,0.526351612557598,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,svm,spectral_aggregated,emotion_quadrant,test,0.6125461254612546,0.3658637965205902,0.5232814431205313,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,random_forest,spectral_aggregated,emotion_quadrant,val,0.6148148148148148,0.3773740639891082,0.5302235500760575,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,random_forest,spectral_aggregated,emotion_quadrant,test,0.6088560885608856,0.3761166670649429,0.5253220372192252,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,gradient_boosting,spectral_aggregated,emotion_quadrant,val,0.6111111111111112,0.4104333189812584,0.549405616213729,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,gradient_boosting,spectral_aggregated,emotion_quadrant,test,0.5719557195571956,0.3792444232946416,0.5177630110194282,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,xgboost,spectral_aggregated,emotion_quadrant,val,0.6407407407407407,0.446118553129497,0.5794255959372239,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,xgboost,spectral_aggregated,emotion_quadrant,test,0.5682656826568265,0.3632571690198969,0.5019192160258219,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,mlp,spectral_aggregated,emotion_quadrant,val,0.6037037037037037,0.4466549404312377,0.5672353541217496,,,,Thresholds fit on train tracks only; splits by track_id.
+static,static,mlp,spectral_aggregated,emotion_quadrant,test,0.5793357933579336,0.4082280819646361,0.5408735337704802,,,,Thresholds fit on train tracks only; splits by track_id.
+dynamic_window,dynamic_window_classification,logistic_regression,dynamic_window_spectral,dynamic_emotion_quadrant,val,0.5644496434937611,0.434769772266053,0.535214268012597,,,,Window-level classical ML.
+dynamic_window,dynamic_window_classification,logistic_regression,dynamic_window_spectral,dynamic_emotion_quadrant,test,0.6001270354544405,0.4618230971303837,0.5726060841599065,,,,Window-level classical ML.
+dynamic_window,dynamic_window_classification,svm,dynamic_window_spectral,dynamic_emotion_quadrant,val,0.5640040106951871,0.4422414119457928,0.5416272796630999,,,,Window-level classical ML.
+dynamic_window,dynamic_window_classification,svm,dynamic_window_spectral,dynamic_emotion_quadrant,test,0.5823420718327752,0.4567747395057217,0.5631355664655991,,,,Window-level classical ML.
+dynamic_window,dynamic_window_classification,random_forest,dynamic_window_spectral,dynamic_emotion_quadrant,val,0.5846702317290553,0.4394602408373819,0.5444224876270339,,,,Window-level classical ML.
+dynamic_window,dynamic_window_classification,random_forest,dynamic_window_spectral,dynamic_emotion_quadrant,test,0.6034761519805982,0.4276735979346505,0.5558001453008115,,,,Window-level classical ML.
+dynamic_window,dynamic_window_classification,gradient_boosting,dynamic_window_spectral,dynamic_emotion_quadrant,val,0.5837232620320856,0.4581737308757838,0.5557534160840201,,,,Window-level classical ML.
+dynamic_window,dynamic_window_classification,gradient_boosting,dynamic_window_spectral,dynamic_emotion_quadrant,test,0.5997228317357662,0.4553479555040096,0.5694575344886176,,,,Window-level classical ML.
+dynamic_window,dynamic_window_classification,xgboost,dynamic_window_spectral,dynamic_emotion_quadrant,val,0.5887923351158645,0.4686826230522719,0.5631195531704144,,,,Window-level classical ML.
+dynamic_window,dynamic_window_classification,xgboost,dynamic_window_spectral,dynamic_emotion_quadrant,test,0.5938907495091812,0.4516028869805189,0.5657738842145069,,,,Window-level classical ML.
+dynamic_window,dynamic_window_regression,ridge,dynamic_window_spectral,valence_arousal,val,,,,0.1581095813372906,0.1937933322254943,0.243165219708507,Window-level regression.
+dynamic_window,dynamic_window_regression,ridge,dynamic_window_spectral,valence_arousal,test,,,,0.1766080980750234,0.2153358809553415,0.2411690124726532,Window-level regression.
+dynamic_window,dynamic_window_regression,ridge,dynamic_window_spectral,valence_arousal,val,,,,0.1684233149903542,0.212298562813736,0.391025087397854,Window-level regression.
+dynamic_window,dynamic_window_regression,ridge,dynamic_window_spectral,valence_arousal,test,,,,0.1633243632543079,0.2020212640183908,0.5255122449158143,Window-level regression.
+dynamic_window,dynamic_window_regression,random_forest_regressor,dynamic_window_spectral,valence_arousal,val,,,,0.1556651481811354,0.1907384562014424,0.2668379995361454,Window-level regression.
+dynamic_window,dynamic_window_regression,random_forest_regressor,dynamic_window_spectral,valence_arousal,test,,,,0.1721466000688097,0.2118471811903748,0.2655577811811365,Window-level regression.
+dynamic_window,dynamic_window_regression,random_forest_regressor,dynamic_window_spectral,valence_arousal,val,,,,0.159511768606314,0.1997804461679836,0.4607238037830216,Window-level regression.
+dynamic_window,dynamic_window_regression,random_forest_regressor,dynamic_window_spectral,valence_arousal,test,,,,0.1582851087435449,0.1976770949857655,0.5456991583967736,Window-level regression.
+dynamic_window,dynamic_window_regression,gradient_boosting_regressor,dynamic_window_spectral,valence_arousal,val,,,,0.1571923653216945,0.1926368432461145,0.2521713028479317,Window-level regression.
+dynamic_window,dynamic_window_regression,gradient_boosting_regressor,dynamic_window_spectral,valence_arousal,test,,,,0.1731282267886841,0.212223315097547,0.2629474669062989,Window-level regression.
+dynamic_window,dynamic_window_regression,gradient_boosting_regressor,dynamic_window_spectral,valence_arousal,val,,,,0.1595830810736621,0.199480002784895,0.4623445843759869,Window-level regression.
+dynamic_window,dynamic_window_regression,gradient_boosting_regressor,dynamic_window_spectral,valence_arousal,test,,,,0.1558892234267302,0.1956223860025248,0.5550943260434826,Window-level regression.
+sequence,sequence,mlp,mfcc_sequence,emotion_quadrant,val,0.6333333333333333,0.3985389786993321,0.5512168529357016,,,,Track-level sequence models on MFCC.
+sequence,sequence,mlp,mfcc_sequence,emotion_quadrant,test,0.6051660516605166,0.3910395140075394,0.5311108849433626,,,,Track-level sequence models on MFCC.
+sequence,sequence,lstm,mfcc_sequence,emotion_quadrant,val,0.6296296296296297,0.5301454191261219,0.6121411336574782,,,,Track-level sequence models on MFCC.
+sequence,sequence,lstm,mfcc_sequence,emotion_quadrant,test,0.5867158671586716,0.4707152110964151,0.5690170904310804,,,,Track-level sequence models on MFCC.
+sequence,sequence,gru,mfcc_sequence,emotion_quadrant,val,0.6148148148148148,0.5062409626479978,0.600610761945212,,,,Track-level sequence models on MFCC.
+sequence,sequence,gru,mfcc_sequence,emotion_quadrant,test,0.5276752767527675,0.3932315704519498,0.5039916320551331,,,,Track-level sequence models on MFCC.
+sequence,sequence,attention,mfcc_sequence,emotion_quadrant,val,0.6296296296296297,0.5292461029581876,0.6111788587667258,,,,Track-level sequence models on MFCC.
+sequence,sequence,attention,mfcc_sequence,emotion_quadrant,test,0.5645756457564576,0.4505351400396039,0.5450338085183066,,,,Track-level sequence models on MFCC.
+sequence,sequence,transformer,mfcc_sequence,emotion_quadrant,val,0.5962962962962963,0.4803159278022479,0.5795140799313165,,,,Track-level sequence models on MFCC.
+sequence,sequence,transformer,mfcc_sequence,emotion_quadrant,test,0.5940959409594095,0.5098285587725232,0.5864908835973213,,,,Track-level sequence models on MFCC.
+spectrogram,spectrogram,cnn,mel_spectrogram,emotion_quadrant,val,0.6037037037037037,0.3483564268867924,0.5109538784067087,,,,Mel-spectrogram CNN/CRNN.
+spectrogram,spectrogram,cnn,mel_spectrogram,emotion_quadrant,test,0.6088560885608856,0.3518661518661519,0.5141888330080212,,,,Mel-spectrogram CNN/CRNN.
+spectrogram,spectrogram,crnn,mel_spectrogram,emotion_quadrant,val,0.6370370370370371,0.3679613797169811,0.5394686844863731,,,,Mel-spectrogram CNN/CRNN.
+spectrogram,spectrogram,crnn,mel_spectrogram,emotion_quadrant,test,0.6383763837638377,0.370702981229297,0.5409450134251066,,,,Mel-spectrogram CNN/CRNN.
+pretrained,pretrained_embedding,ast_audioset_logistic_regression,pretrained_audio_embedding,emotion_quadrant,val,0.5703703703703704,0.4846941696481397,0.5766362534337428,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,ast_audioset_logistic_regression,pretrained_audio_embedding,emotion_quadrant,test,0.6273062730627307,0.5417327012985691,0.6254116476468894,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,ast_audioset_random_forest,pretrained_audio_embedding,emotion_quadrant,val,0.6444444444444445,0.3717911211877422,0.5452985201979571,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,ast_audioset_random_forest,pretrained_audio_embedding,emotion_quadrant,test,0.6568265682656826,0.3799288061336254,0.5548877832699466,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,ast_audioset_gradient_boosting,pretrained_audio_embedding,emotion_quadrant,val,0.6444444444444445,0.4756715742328949,0.6045247125341465,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,ast_audioset_gradient_boosting,pretrained_audio_embedding,emotion_quadrant,test,0.6752767527675276,0.4924508143847766,0.6231496259084507,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,ast_audioset_xgboost,pretrained_audio_embedding,emotion_quadrant,val,0.6555555555555556,0.4649535927731416,0.5991331605366693,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,ast_audioset_xgboost,pretrained_audio_embedding,emotion_quadrant,test,0.7084870848708487,0.5381091794960503,0.6564344962598562,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,mert_v1_95m_logistic_regression,pretrained_audio_embedding,emotion_quadrant,val,0.5296296296296297,0.4303723807597515,0.5312999676810547,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,mert_v1_95m_logistic_regression,pretrained_audio_embedding,emotion_quadrant,test,0.5719557195571956,0.4466615451939908,0.5731768771031815,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,mert_v1_95m_random_forest,pretrained_audio_embedding,emotion_quadrant,val,0.6407407407407407,0.3702206084612422,0.5426002335063235,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,mert_v1_95m_random_forest,pretrained_audio_embedding,emotion_quadrant,test,0.6051660516605166,0.3517235023041474,0.5136155899807846,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,mert_v1_95m_gradient_boosting,pretrained_audio_embedding,emotion_quadrant,val,0.6,0.4054919827957746,0.547952663947844,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,mert_v1_95m_gradient_boosting,pretrained_audio_embedding,emotion_quadrant,test,0.6162361623616236,0.3926596573208722,0.5455029830672138,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,mert_v1_95m_xgboost,pretrained_audio_embedding,emotion_quadrant,val,0.6037037037037037,0.3822362278244631,0.5332295881315489,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,mert_v1_95m_xgboost,pretrained_audio_embedding,emotion_quadrant,test,0.6088560885608856,0.3680555555555556,0.5257336144790019,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,clap_htsat_unfused_logistic_regression,pretrained_audio_embedding,emotion_quadrant,val,0.5814814814814815,0.4846906246906247,0.584996820996821,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,clap_htsat_unfused_logistic_regression,pretrained_audio_embedding,emotion_quadrant,test,0.5867158671586716,0.4707640006365935,0.5781147161615734,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,clap_htsat_unfused_random_forest,pretrained_audio_embedding,emotion_quadrant,val,0.6518518518518519,0.4010187376183138,0.5672332689281843,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,clap_htsat_unfused_random_forest,pretrained_audio_embedding,emotion_quadrant,test,0.6642066420664207,0.4175333146957413,0.5776870885846124,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,clap_htsat_unfused_gradient_boosting,pretrained_audio_embedding,emotion_quadrant,val,0.6185185185185185,0.4417953511095087,0.5757236935851212,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,clap_htsat_unfused_gradient_boosting,pretrained_audio_embedding,emotion_quadrant,test,0.6346863468634686,0.4440274029089818,0.5889291146622667,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,clap_htsat_unfused_xgboost,pretrained_audio_embedding,emotion_quadrant,val,0.6407407407407407,0.4682409833867841,0.5940415976379275,,,,Classifier on frozen pretrained embeddings.
+pretrained,pretrained_embedding,clap_htsat_unfused_xgboost,pretrained_audio_embedding,emotion_quadrant,test,0.6678966789667896,0.4793411792934618,0.6157313994229089,,,,Classifier on frozen pretrained embeddings.

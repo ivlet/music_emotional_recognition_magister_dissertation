@@ -1,0 +1,7 @@
+experiment_group,task_type,model_name,feature_type,target_type,eval_split,accuracy,macro_f1,weighted_f1,mae,rmse,r2,comments
+dynamic_window,dynamic_window_regression,gradient_boosting_regressor,dynamic_window_spectral,valence_arousal,test,,,,0.1731282267886841,0.212223315097547,0.2629474669062989,Window-level regression.
+dynamic_window,dynamic_window_regression,gradient_boosting_regressor,dynamic_window_spectral,valence_arousal,test,,,,0.1558892234267302,0.1956223860025248,0.5550943260434826,Window-level regression.
+dynamic_window,dynamic_window_regression,random_forest_regressor,dynamic_window_spectral,valence_arousal,test,,,,0.1721466000688097,0.2118471811903748,0.2655577811811365,Window-level regression.
+dynamic_window,dynamic_window_regression,random_forest_regressor,dynamic_window_spectral,valence_arousal,test,,,,0.1582851087435449,0.1976770949857655,0.5456991583967736,Window-level regression.
+dynamic_window,dynamic_window_regression,ridge,dynamic_window_spectral,valence_arousal,test,,,,0.1766080980750234,0.2153358809553415,0.2411690124726532,Window-level regression.
+dynamic_window,dynamic_window_regression,ridge,dynamic_window_spectral,valence_arousal,test,,,,0.1633243632543079,0.2020212640183908,0.5255122449158143,Window-level regression.

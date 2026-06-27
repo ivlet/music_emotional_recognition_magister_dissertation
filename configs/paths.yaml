@@ -1,0 +1,69 @@
+# All paths are relative to the project root unless noted otherwise.
+# DEAM archive paths under deam.root are relative to that folder.
+
+project:
+  name: music-emotion-recognition
+  random_state: 42
+
+deam:
+  root: data/raw/DEAM
+
+  annotations:
+    dir: DEAM_annotations/annotations
+    averaged_per_song: annotations_averaged_per_song
+    per_each_rater: annotations_per_each_rater
+    dynamic_per_second: dynamic_per_second_annotations
+    song_level: song_level
+
+    static_files:
+      - static_annotations_averaged_songs_1_2000.csv
+      - static_annotations_averaged_songs_2000_2058.csv
+
+    dynamic_valence: valence.csv
+    dynamic_arousal: arousal.csv
+
+  audio:
+    dir: DEAM_audio/MEMD_audio
+    extensions:
+      - .mp3
+      - .wav
+
+processed:
+  dir: data/processed
+  metadata: data/processed/deam_metadata.parquet
+  metadata_csv: data/processed/deam_metadata.csv
+  static_labels: data/processed/static_labels.parquet
+  static_track_splits: data/processed/static_track_splits.parquet
+  static_track_splits_csv: data/processed/static_track_splits.csv
+  dynamic_windows: data/processed/dynamic_windows.parquet
+  dynamic_windows_csv: data/processed/dynamic_windows.csv
+  dynamic_trajectories: data/processed/dynamic_trajectories.parquet
+
+features:
+  dir: data/features
+  static: data/features/static
+  static_features: data/features/static_features.parquet
+  static_features_csv: data/features/static_features.csv
+  dynamic_window_features: data/features/dynamic_window_features.parquet
+  dynamic_window_features_csv: data/features/dynamic_window_features.csv
+  sequence: data/features/sequence
+  sequence_mfcc_dir: data/features/sequence/mfcc
+  sequence_mfcc_manifest: data/features/sequence/mfcc_manifest.csv
+  mel_spectrogram_dir: data/features/mel_spectrograms
+  mel_spectrogram_index: data/features/mel_spectrogram_index.csv
+  pretrained_embeddings_dir: data/features/pretrained_embeddings
+  # Legacy single-model index (deprecated; per-model index at {dir}/{alias}/index.csv)
+  pretrained_embeddings_index: data/features/pretrained_embeddings_index.csv
+  spectrogram: data/features/spectrogram
+  dynamic: data/features/dynamic
+
+reports:
+  figures: reports/figures
+  dynamic_trajectories: reports/figures/dynamic_trajectories
+  final_results: reports/figures/final_results
+  tables: reports/tables
+  dynamic_emotion_change_summary: reports/tables/dynamic_emotion_change_summary.csv
+
+results:
+  metrics: results/metrics
+  predictions: results/predictions

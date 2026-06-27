@@ -1,0 +1,79 @@
+{
+  "model_name": "svm",
+  "task": "classification",
+  "target": "dynamic_emotion_quadrant",
+  "train_size": 94725,
+  "val_size": 17952,
+  "test_size": 17318,
+  "n_features": 185,
+  "label_classes": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "val": {
+    "accuracy": 0.5640040106951871,
+    "macro_f1": 0.4422414119457928,
+    "weighted_f1": 0.5416272796630999,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.58      0.70      0.64      6660\n          Q2       0.21      0.15      0.18      2516\n          Q3       0.42      0.20      0.27      2346\n          Q4       0.66      0.71      0.68      6430\n\n    accuracy                           0.56     17952\n   macro avg       0.47      0.44      0.44     17952\nweighted avg       0.54      0.56      0.54     17952\n",
+    "confusion_matrix": [
+      [
+        4676,
+        603,
+        336,
+        1045
+      ],
+      [
+        1012,
+        389,
+        107,
+        1008
+      ],
+      [
+        1343,
+        172,
+        463,
+        368
+      ],
+      [
+        976,
+        658,
+        199,
+        4597
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.5823420718327752,
+    "macro_f1": 0.4567747395057217,
+    "weighted_f1": 0.5631355664655991,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.63      0.73      0.67      6526\n          Q2       0.23      0.16      0.19      2168\n          Q3       0.38      0.23      0.29      2317\n          Q4       0.66      0.71      0.68      6307\n\n    accuracy                           0.58     17318\n   macro avg       0.47      0.46      0.46     17318\nweighted avg       0.55      0.58      0.56     17318\n",
+    "confusion_matrix": [
+      [
+        4748,
+        388,
+        549,
+        841
+      ],
+      [
+        746,
+        349,
+        97,
+        976
+      ],
+      [
+        1139,
+        124,
+        530,
+        524
+      ],
+      [
+        951,
+        679,
+        219,
+        4458
+      ]
+    ]
+  }
+}

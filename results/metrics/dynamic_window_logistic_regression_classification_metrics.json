@@ -1,0 +1,79 @@
+{
+  "model_name": "logistic_regression",
+  "task": "classification",
+  "target": "dynamic_emotion_quadrant",
+  "train_size": 94725,
+  "val_size": 17952,
+  "test_size": 17318,
+  "n_features": 185,
+  "label_classes": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "val": {
+    "accuracy": 0.5644496434937611,
+    "macro_f1": 0.43476977226605307,
+    "weighted_f1": 0.535214268012597,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.57      0.70      0.63      6660\n          Q2       0.22      0.12      0.16      2516\n          Q3       0.44      0.20      0.27      2346\n          Q4       0.64      0.73      0.68      6430\n\n    accuracy                           0.56     17952\n   macro avg       0.47      0.44      0.43     17952\nweighted avg       0.53      0.56      0.54     17952\n",
+    "confusion_matrix": [
+      [
+        4658,
+        489,
+        283,
+        1230
+      ],
+      [
+        1111,
+        305,
+        59,
+        1041
+      ],
+      [
+        1398,
+        131,
+        459,
+        358
+      ],
+      [
+        1018,
+        459,
+        242,
+        4711
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.6001270354544405,
+    "macro_f1": 0.4618230971303837,
+    "weighted_f1": 0.5726060841599065,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.62      0.75      0.68      6526\n          Q2       0.28      0.14      0.19      2168\n          Q3       0.39      0.21      0.27      2317\n          Q4       0.66      0.74      0.70      6307\n\n    accuracy                           0.60     17318\n   macro avg       0.49      0.46      0.46     17318\nweighted avg       0.56      0.60      0.57     17318\n",
+    "confusion_matrix": [
+      [
+        4907,
+        237,
+        574,
+        808
+      ],
+      [
+        779,
+        314,
+        38,
+        1037
+      ],
+      [
+        1150,
+        136,
+        492,
+        539
+      ],
+      [
+        1023,
+        438,
+        166,
+        4680
+      ]
+    ]
+  }
+}

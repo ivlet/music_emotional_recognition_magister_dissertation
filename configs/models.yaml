@@ -1,0 +1,111 @@
+# Model hyperparameters (used in later training scripts)
+
+static:
+  logistic_regression:
+    C: 1.0
+    max_iter: 2000
+  knn:
+    n_neighbors: 5
+    weights: distance
+  svm:
+    C: 1.0
+    kernel: rbf
+    gamma: scale
+  random_forest:
+    n_estimators: 300
+    max_depth: null
+  gradient_boosting:
+    n_estimators: 200
+    learning_rate: 0.05
+    max_depth: 4
+  xgboost:
+    n_estimators: 300
+    learning_rate: 0.05
+    max_depth: 6
+  mlp:
+    hidden_layer_sizes: [256, 128]
+    activation: relu
+    solver: adam
+    alpha: 0.0001
+    learning_rate_init: 0.001
+    max_iter: 500
+    early_stopping: true
+    validation_fraction: 0.15
+    n_iter_no_change: 20
+
+sequence:
+  mlp:
+    hidden_dims: [256, 128]
+    dropout: 0.3
+  attention:
+    hidden_size: 128
+    num_layers: 1
+    dropout: 0.3
+  transformer:
+    d_model: 128
+    nhead: 4
+    num_layers: 2
+    dim_feedforward: 256
+    dropout: 0.3
+  lstm:
+    hidden_size: 128
+    num_layers: 2
+    dropout: 0.3
+  gru:
+    hidden_size: 128
+    num_layers: 2
+    dropout: 0.3
+  tcn:
+    num_channels: [64, 64, 128]
+    kernel_size: 3
+    dropout: 0.2
+
+spectrogram:
+  cnn:
+    channels: [32, 64, 128]
+    kernel_size: 3
+    dropout: 0.3
+  crnn:
+    cnn_channels: [32, 64, 128]
+    kernel_size: 3
+    rnn_hidden_size: 128
+    rnn_num_layers: 2
+    rnn_type: gru
+    dropout: 0.3
+
+dynamic:
+  regression:
+    hidden_size: 128
+    num_layers: 2
+  classification:
+    hidden_size: 128
+    num_layers: 2
+
+dynamic_window:
+  logistic_regression:
+    C: 1.0
+    max_iter: 2000
+  svm:
+    C: 1.0
+    kernel: rbf
+    gamma: scale
+  random_forest:
+    n_estimators: 300
+    max_depth: null
+  gradient_boosting:
+    n_estimators: 200
+    learning_rate: 0.05
+    max_depth: 4
+  xgboost:
+    n_estimators: 300
+    learning_rate: 0.05
+    max_depth: 6
+  ridge:
+    alpha: 1.0
+  random_forest_regressor:
+    n_estimators: 300
+    max_depth: null
+  gradient_boosting_regressor:
+    n_estimators: 200
+    learning_rate: 0.05
+    max_depth: 4

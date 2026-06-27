@@ -1,0 +1,49 @@
+# Training and evaluation settings
+
+general:
+  random_state: 42
+  device: auto   # auto | cpu | cuda
+
+splits:
+  # Proportions for train / validation / test (must sum to 1.0)
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  stratify: true
+
+static:
+  batch_size: null   # not used for sklearn models
+  cv_folds: 5
+
+sequence:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001
+  early_stopping_patience: 8
+
+spectrogram:
+  batch_size: 16
+  epochs: 40
+  learning_rate: 0.0005
+  early_stopping_patience: 8
+
+pretrained:
+  batch_size: 32
+  cv_folds: null
+
+dynamic:
+  batch_size: 64
+  epochs: 50
+  learning_rate: 0.001
+  early_stopping_patience: 10
+  task: regression   # regression | classification | change_detection
+
+metrics:
+  classification:
+    - accuracy
+    - macro_f1
+    - weighted_f1
+  regression:
+    - mae
+    - rmse
+    - r2
