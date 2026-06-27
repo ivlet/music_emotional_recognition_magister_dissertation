@@ -1,0 +1,47 @@
+{
+  "model_name": "lstm",
+  "task_type": "sequence",
+  "feature_type": "mfcc_sequence",
+  "target_type": "emotion_quadrant",
+  "eval_split": "val",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.6296296296296297,
+  "macro_f1": 0.5301454191261219,
+  "weighted_f1": 0.6121411336574782,
+  "best_val_macro_f1": 0.5301454191261219,
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.62      0.79      0.70       102\n          Q2       0.52      0.35      0.42        37\n          Q3       0.40      0.23      0.29        35\n          Q4       0.72      0.71      0.71        96\n\n    accuracy                           0.63       270\n   macro avg       0.56      0.52      0.53       270\nweighted avg       0.61      0.63      0.61       270\n",
+  "confusion_matrix": [
+    [
+      81,
+      6,
+      4,
+      11
+    ],
+    [
+      9,
+      13,
+      3,
+      12
+    ],
+    [
+      23,
+      0,
+      8,
+      4
+    ],
+    [
+      17,
+      6,
+      5,
+      68
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

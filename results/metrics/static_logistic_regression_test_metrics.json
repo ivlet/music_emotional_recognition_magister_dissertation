@@ -1,0 +1,56 @@
+{
+  "model_name": "logistic_regression",
+  "task_type": "static",
+  "feature_type": "spectral_aggregated",
+  "target_type": "emotion_quadrant",
+  "eval_split": "test",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.5645756457564576,
+  "macro_f1": 0.4278842401848839,
+  "weighted_f1": 0.5452039881517895,
+  "mae": null,
+  "rmse": null,
+  "r2": null,
+  "comments": "Thresholds fit on train tracks only; splits by track_id.",
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.65      0.73      0.69       102\n          Q2       0.27      0.18      0.22        38\n          Q3       0.15      0.11      0.13        35\n          Q4       0.64      0.71      0.67        96\n\n    accuracy                           0.56       271\n   macro avg       0.43      0.43      0.43       271\nweighted avg       0.53      0.56      0.55       271\n",
+  "confusion_matrix": [
+    [
+      74,
+      5,
+      5,
+      18
+    ],
+    [
+      13,
+      7,
+      11,
+      7
+    ],
+    [
+      14,
+      4,
+      4,
+      13
+    ],
+    [
+      12,
+      10,
+      6,
+      68
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "label_classes": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

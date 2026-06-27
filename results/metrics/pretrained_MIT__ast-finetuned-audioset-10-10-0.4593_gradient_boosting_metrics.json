@@ -1,0 +1,75 @@
+{
+  "model_name": "MIT__ast-finetuned-audioset-10-10-0.4593_gradient_boosting",
+  "pretrained_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "classifier": "gradient_boosting",
+  "task_type": "pretrained_embedding",
+  "feature_type": "pretrained_audio_embedding",
+  "target_type": "emotion_quadrant",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "val": {
+    "accuracy": 0.6444444444444445,
+    "macro_f1": 0.47567157423289497,
+    "weighted_f1": 0.6045247125341465,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.67      0.81      0.74       102\n          Q2       0.64      0.19      0.29        37\n          Q3       0.15      0.09      0.11        35\n          Q4       0.70      0.84      0.76        96\n\n    accuracy                           0.64       270\n   macro avg       0.54      0.48      0.48       270\nweighted avg       0.61      0.64      0.60       270\n",
+    "confusion_matrix": [
+      [
+        83,
+        2,
+        10,
+        7
+      ],
+      [
+        9,
+        7,
+        5,
+        16
+      ],
+      [
+        20,
+        0,
+        3,
+        12
+      ],
+      [
+        11,
+        2,
+        2,
+        81
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.6752767527675276,
+    "macro_f1": 0.49245081438477667,
+    "weighted_f1": 0.6231496259084507,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.67      0.87      0.76       102\n          Q2       0.50      0.13      0.21        38\n          Q3       0.38      0.14      0.21        35\n          Q4       0.72      0.88      0.79        96\n\n    accuracy                           0.68       271\n   macro avg       0.57      0.51      0.49       271\nweighted avg       0.63      0.68      0.62       271\n",
+    "confusion_matrix": [
+      [
+        89,
+        3,
+        1,
+        9
+      ],
+      [
+        16,
+        5,
+        4,
+        13
+      ],
+      [
+        19,
+        1,
+        5,
+        10
+      ],
+      [
+        8,
+        1,
+        3,
+        84
+      ]
+    ]
+  }
+}

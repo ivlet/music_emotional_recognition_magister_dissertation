@@ -1,0 +1,47 @@
+{
+  "model_name": "cnn",
+  "task_type": "spectrogram",
+  "feature_type": "mel_spectrogram",
+  "target_type": "emotion_quadrant",
+  "eval_split": "test",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.6088560885608856,
+  "macro_f1": 0.3518661518661519,
+  "weighted_f1": 0.5141888330080212,
+  "best_val_macro_f1": 0.34835642688679247,
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.69      0.73      0.70       102\n          Q2       0.00      0.00      0.00        38\n          Q3       0.00      0.00      0.00        35\n          Q4       0.56      0.95      0.70        96\n\n    accuracy                           0.61       271\n   macro avg       0.31      0.42      0.35       271\nweighted avg       0.46      0.61      0.51       271\n",
+  "confusion_matrix": [
+    [
+      74,
+      0,
+      0,
+      28
+    ],
+    [
+      14,
+      0,
+      0,
+      24
+    ],
+    [
+      15,
+      0,
+      0,
+      20
+    ],
+    [
+      5,
+      0,
+      0,
+      91
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

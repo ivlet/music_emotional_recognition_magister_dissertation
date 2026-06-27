@@ -1,0 +1,79 @@
+{
+  "model_name": "m-a-p/MERT-v1-95M",
+  "model_alias": "mert_v1_95m",
+  "backend": "mert_hf",
+  "classifier": "logistic_regression",
+  "task_type": "pretrained_embedding",
+  "feature_type": "pretrained_audio_embedding",
+  "target_type": "emotion_quadrant",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "embedding_dim": 768,
+  "sample_rate": 24000,
+  "max_duration_sec": 30.0,
+  "val": {
+    "accuracy": 0.5296296296296297,
+    "macro_f1": 0.4303723807597515,
+    "weighted_f1": 0.5312999676810547,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.64      0.64      0.64       102\n          Q2       0.22      0.27      0.24        37\n          Q3       0.21      0.17      0.19        35\n          Q4       0.66      0.65      0.65        96\n\n    accuracy                           0.53       270\n   macro avg       0.43      0.43      0.43       270\nweighted avg       0.53      0.53      0.53       270\n",
+    "confusion_matrix": [
+      [
+        65,
+        14,
+        13,
+        10
+      ],
+      [
+        7,
+        10,
+        4,
+        16
+      ],
+      [
+        18,
+        5,
+        6,
+        6
+      ],
+      [
+        11,
+        17,
+        6,
+        62
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.5719557195571956,
+    "macro_f1": 0.4466615451939908,
+    "weighted_f1": 0.5731768771031815,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.73      0.75      0.74       102\n          Q2       0.17      0.21      0.19        38\n          Q3       0.19      0.14      0.16        35\n          Q4       0.72      0.68      0.70        96\n\n    accuracy                           0.57       271\n   macro avg       0.45      0.45      0.45       271\nweighted avg       0.58      0.57      0.57       271\n",
+    "confusion_matrix": [
+      [
+        77,
+        13,
+        5,
+        7
+      ],
+      [
+        11,
+        8,
+        9,
+        10
+      ],
+      [
+        13,
+        9,
+        5,
+        8
+      ],
+      [
+        5,
+        18,
+        8,
+        65
+      ]
+    ]
+  }
+}

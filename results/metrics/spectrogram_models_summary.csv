@@ -1,0 +1,5 @@
+model_name,task_type,feature_type,target_type,eval_split,train_size,val_size,test_size,accuracy,macro_f1,weighted_f1,best_val_macro_f1
+cnn,spectrogram,mel_spectrogram,emotion_quadrant,val,1261,270,271,0.6037037037037037,0.34835642688679247,0.5109538784067087,0.34835642688679247
+cnn,spectrogram,mel_spectrogram,emotion_quadrant,test,1261,270,271,0.6088560885608856,0.3518661518661519,0.5141888330080212,0.34835642688679247
+crnn,spectrogram,mel_spectrogram,emotion_quadrant,val,1261,270,271,0.6370370370370371,0.3679613797169811,0.5394686844863731,0.3679613797169811
+crnn,spectrogram,mel_spectrogram,emotion_quadrant,test,1261,270,271,0.6383763837638377,0.370702981229297,0.5409450134251066,0.3679613797169811

@@ -1,0 +1,56 @@
+{
+  "model_name": "random_forest",
+  "task_type": "static",
+  "feature_type": "spectral_aggregated",
+  "target_type": "emotion_quadrant",
+  "eval_split": "val",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.6148148148148148,
+  "macro_f1": 0.3773740639891082,
+  "weighted_f1": 0.5302235500760575,
+  "mae": null,
+  "rmse": null,
+  "r2": null,
+  "comments": "Thresholds fit on train tracks only; splits by track_id.",
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.62      0.84      0.72       102\n          Q2       1.00      0.05      0.10        37\n          Q3       0.00      0.00      0.00        35\n          Q4       0.60      0.81      0.69        96\n\n    accuracy                           0.61       270\n   macro avg       0.56      0.43      0.38       270\nweighted avg       0.59      0.61      0.53       270\n",
+  "confusion_matrix": [
+    [
+      86,
+      0,
+      0,
+      16
+    ],
+    [
+      12,
+      2,
+      0,
+      23
+    ],
+    [
+      22,
+      0,
+      0,
+      13
+    ],
+    [
+      18,
+      0,
+      0,
+      78
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "label_classes": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

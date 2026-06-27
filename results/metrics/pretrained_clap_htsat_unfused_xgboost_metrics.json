@@ -1,0 +1,79 @@
+{
+  "model_name": "laion/clap-htsat-unfused",
+  "model_alias": "clap_htsat_unfused",
+  "backend": "clap_hf",
+  "classifier": "xgboost",
+  "task_type": "pretrained_embedding",
+  "feature_type": "pretrained_audio_embedding",
+  "target_type": "emotion_quadrant",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "embedding_dim": 512,
+  "sample_rate": 48000,
+  "max_duration_sec": 30.0,
+  "val": {
+    "accuracy": 0.6407407407407407,
+    "macro_f1": 0.4682409833867841,
+    "weighted_f1": 0.5940415976379275,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.66      0.78      0.72       102\n          Q2       0.44      0.19      0.26        37\n          Q3       0.30      0.09      0.13        35\n          Q4       0.67      0.86      0.76        96\n\n    accuracy                           0.64       270\n   macro avg       0.52      0.48      0.47       270\nweighted avg       0.59      0.64      0.59       270\n",
+    "confusion_matrix": [
+      [
+        80,
+        5,
+        5,
+        12
+      ],
+      [
+        12,
+        7,
+        1,
+        17
+      ],
+      [
+        18,
+        3,
+        3,
+        11
+      ],
+      [
+        11,
+        1,
+        1,
+        83
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.6678966789667896,
+    "macro_f1": 0.47934117929346187,
+    "weighted_f1": 0.6157313994229089,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.68      0.86      0.76       102\n          Q2       0.38      0.13      0.20        38\n          Q3       0.33      0.11      0.17        35\n          Q4       0.72      0.88      0.79        96\n\n    accuracy                           0.67       271\n   macro avg       0.53      0.50      0.48       271\nweighted avg       0.61      0.67      0.62       271\n",
+    "confusion_matrix": [
+      [
+        88,
+        5,
+        1,
+        8
+      ],
+      [
+        16,
+        5,
+        4,
+        13
+      ],
+      [
+        18,
+        2,
+        4,
+        11
+      ],
+      [
+        8,
+        1,
+        3,
+        84
+      ]
+    ]
+  }
+}

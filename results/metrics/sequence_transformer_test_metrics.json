@@ -1,0 +1,47 @@
+{
+  "model_name": "transformer",
+  "task_type": "sequence",
+  "feature_type": "mfcc_sequence",
+  "target_type": "emotion_quadrant",
+  "eval_split": "test",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.5940959409594095,
+  "macro_f1": 0.5098285587725232,
+  "weighted_f1": 0.5864908835973213,
+  "best_val_macro_f1": 0.4803159278022479,
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.61      0.71      0.65       102\n          Q2       0.62      0.26      0.37        38\n          Q3       0.29      0.34      0.32        35\n          Q4       0.71      0.70      0.70        96\n\n    accuracy                           0.59       271\n   macro avg       0.56      0.50      0.51       271\nweighted avg       0.60      0.59      0.59       271\n",
+  "confusion_matrix": [
+    [
+      72,
+      4,
+      11,
+      15
+    ],
+    [
+      16,
+      10,
+      5,
+      7
+    ],
+    [
+      17,
+      0,
+      12,
+      6
+    ],
+    [
+      14,
+      2,
+      13,
+      67
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "model_name": "mlp",
+  "task_type": "static",
+  "feature_type": "spectral_aggregated",
+  "target_type": "emotion_quadrant",
+  "eval_split": "test",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.5793357933579336,
+  "macro_f1": 0.4082280819646361,
+  "weighted_f1": 0.5408735337704802,
+  "mae": null,
+  "rmse": null,
+  "r2": null,
+  "comments": "Thresholds fit on train tracks only; splits by track_id.",
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.66      0.78      0.72       102\n          Q2       0.22      0.13      0.16        38\n          Q3       0.14      0.06      0.08        35\n          Q4       0.62      0.73      0.67        96\n\n    accuracy                           0.58       271\n   macro avg       0.41      0.43      0.41       271\nweighted avg       0.52      0.58      0.54       271\n",
+  "confusion_matrix": [
+    [
+      80,
+      6,
+      2,
+      14
+    ],
+    [
+      15,
+      5,
+      5,
+      13
+    ],
+    [
+      14,
+      3,
+      2,
+      16
+    ],
+    [
+      12,
+      9,
+      5,
+      70
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "label_classes": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

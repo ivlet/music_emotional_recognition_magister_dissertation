@@ -1,0 +1,56 @@
+{
+  "model_name": "knn",
+  "task_type": "static",
+  "feature_type": "spectral_aggregated",
+  "target_type": "emotion_quadrant",
+  "eval_split": "val",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.5518518518518518,
+  "macro_f1": 0.4235051285880441,
+  "weighted_f1": 0.5334731404475679,
+  "mae": null,
+  "rmse": null,
+  "r2": null,
+  "comments": "Thresholds fit on train tracks only; splits by track_id.",
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.59      0.75      0.66       102\n          Q2       0.25      0.22      0.23        37\n          Q3       0.20      0.11      0.15        35\n          Q4       0.69      0.62      0.66        96\n\n    accuracy                           0.55       270\n   macro avg       0.43      0.43      0.42       270\nweighted avg       0.53      0.55      0.53       270\n",
+  "confusion_matrix": [
+    [
+      77,
+      9,
+      7,
+      9
+    ],
+    [
+      16,
+      8,
+      2,
+      11
+    ],
+    [
+      21,
+      3,
+      4,
+      7
+    ],
+    [
+      17,
+      12,
+      7,
+      60
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "label_classes": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

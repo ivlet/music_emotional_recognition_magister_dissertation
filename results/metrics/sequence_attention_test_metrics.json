@@ -1,0 +1,47 @@
+{
+  "model_name": "attention",
+  "task_type": "sequence",
+  "feature_type": "mfcc_sequence",
+  "target_type": "emotion_quadrant",
+  "eval_split": "test",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.5645756457564576,
+  "macro_f1": 0.45053514003960393,
+  "weighted_f1": 0.5450338085183066,
+  "best_val_macro_f1": 0.5292461029581876,
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.66      0.62      0.64       102\n          Q2       0.26      0.16      0.20        38\n          Q3       0.33      0.26      0.29        35\n          Q4       0.60      0.78      0.68        96\n\n    accuracy                           0.56       271\n   macro avg       0.46      0.45      0.45       271\nweighted avg       0.54      0.56      0.55       271\n",
+  "confusion_matrix": [
+    [
+      63,
+      10,
+      9,
+      20
+    ],
+    [
+      10,
+      6,
+      6,
+      16
+    ],
+    [
+      12,
+      0,
+      9,
+      14
+    ],
+    [
+      11,
+      7,
+      3,
+      75
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

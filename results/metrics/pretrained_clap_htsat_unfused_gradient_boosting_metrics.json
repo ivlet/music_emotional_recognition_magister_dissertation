@@ -1,0 +1,79 @@
+{
+  "model_name": "laion/clap-htsat-unfused",
+  "model_alias": "clap_htsat_unfused",
+  "backend": "clap_hf",
+  "classifier": "gradient_boosting",
+  "task_type": "pretrained_embedding",
+  "feature_type": "pretrained_audio_embedding",
+  "target_type": "emotion_quadrant",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "embedding_dim": 512,
+  "sample_rate": 48000,
+  "max_duration_sec": 30.0,
+  "val": {
+    "accuracy": 0.6185185185185185,
+    "macro_f1": 0.44179535110950874,
+    "weighted_f1": 0.5757236935851212,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.66      0.77      0.71       102\n          Q2       0.25      0.11      0.15        37\n          Q3       0.25      0.11      0.16        35\n          Q4       0.68      0.83      0.75        96\n\n    accuracy                           0.62       270\n   macro avg       0.46      0.46      0.44       270\nweighted avg       0.56      0.62      0.58       270\n",
+    "confusion_matrix": [
+      [
+        79,
+        8,
+        6,
+        9
+      ],
+      [
+        12,
+        4,
+        3,
+        18
+      ],
+      [
+        18,
+        2,
+        4,
+        11
+      ],
+      [
+        11,
+        2,
+        3,
+        80
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.6346863468634686,
+    "macro_f1": 0.44402740290898185,
+    "weighted_f1": 0.5889291146622667,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.68      0.84      0.75       102\n          Q2       0.31      0.13      0.19        38\n          Q3       0.12      0.06      0.08        35\n          Q4       0.71      0.82      0.76        96\n\n    accuracy                           0.63       271\n   macro avg       0.45      0.46      0.44       271\nweighted avg       0.57      0.63      0.59       271\n",
+    "confusion_matrix": [
+      [
+        86,
+        3,
+        4,
+        9
+      ],
+      [
+        14,
+        5,
+        5,
+        14
+      ],
+      [
+        19,
+        4,
+        2,
+        10
+      ],
+      [
+        7,
+        4,
+        6,
+        79
+      ]
+    ]
+  }
+}

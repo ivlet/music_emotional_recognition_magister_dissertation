@@ -1,0 +1,79 @@
+{
+  "model_name": "laion/clap-htsat-unfused",
+  "model_alias": "clap_htsat_unfused",
+  "backend": "clap_hf",
+  "classifier": "random_forest",
+  "task_type": "pretrained_embedding",
+  "feature_type": "pretrained_audio_embedding",
+  "target_type": "emotion_quadrant",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "embedding_dim": 512,
+  "sample_rate": 48000,
+  "max_duration_sec": 30.0,
+  "val": {
+    "accuracy": 0.6518518518518519,
+    "macro_f1": 0.40101873761831386,
+    "weighted_f1": 0.5672332689281843,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.66      0.87      0.75       102\n          Q2       0.29      0.05      0.09        37\n          Q3       0.00      0.00      0.00        35\n          Q4       0.66      0.89      0.76        96\n\n    accuracy                           0.65       270\n   macro avg       0.40      0.45      0.40       270\nweighted avg       0.53      0.65      0.57       270\n",
+    "confusion_matrix": [
+      [
+        89,
+        3,
+        1,
+        9
+      ],
+      [
+        15,
+        2,
+        0,
+        20
+      ],
+      [
+        20,
+        1,
+        0,
+        14
+      ],
+      [
+        10,
+        1,
+        0,
+        85
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.6642066420664207,
+    "macro_f1": 0.4175333146957413,
+    "weighted_f1": 0.5776870885846124,
+    "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.64      0.90      0.75       102\n          Q2       0.75      0.08      0.14        38\n          Q3       0.00      0.00      0.00        35\n          Q4       0.69      0.89      0.78        96\n\n    accuracy                           0.66       271\n   macro avg       0.52      0.47      0.42       271\nweighted avg       0.59      0.66      0.58       271\n",
+    "confusion_matrix": [
+      [
+        92,
+        1,
+        0,
+        9
+      ],
+      [
+        17,
+        3,
+        1,
+        17
+      ],
+      [
+        23,
+        0,
+        0,
+        12
+      ],
+      [
+        11,
+        0,
+        0,
+        85
+      ]
+    ]
+  }
+}

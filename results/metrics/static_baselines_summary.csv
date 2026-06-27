@@ -1,0 +1,15 @@
+model_name,task_type,feature_type,target_type,eval_split,train_size,val_size,test_size,accuracy,macro_f1,weighted_f1,mae,rmse,r2,comments
+logistic_regression,static,spectral_aggregated,emotion_quadrant,val,1261,270,271,0.5444444444444444,0.38451199852757134,0.5185905189777805,,,,Thresholds fit on train tracks only; splits by track_id.
+logistic_regression,static,spectral_aggregated,emotion_quadrant,test,1261,270,271,0.5645756457564576,0.4278842401848839,0.5452039881517895,,,,Thresholds fit on train tracks only; splits by track_id.
+knn,static,spectral_aggregated,emotion_quadrant,val,1261,270,271,0.5518518518518518,0.4235051285880441,0.5334731404475679,,,,Thresholds fit on train tracks only; splits by track_id.
+knn,static,spectral_aggregated,emotion_quadrant,test,1261,270,271,0.5645756457564576,0.42181016019083817,0.5395310144636318,,,,Thresholds fit on train tracks only; splits by track_id.
+svm,static,spectral_aggregated,emotion_quadrant,val,1261,270,271,0.6148148148148148,0.366856234347433,0.526351612557598,,,,Thresholds fit on train tracks only; splits by track_id.
+svm,static,spectral_aggregated,emotion_quadrant,test,1261,270,271,0.6125461254612546,0.3658637965205902,0.5232814431205313,,,,Thresholds fit on train tracks only; splits by track_id.
+random_forest,static,spectral_aggregated,emotion_quadrant,val,1261,270,271,0.6148148148148148,0.3773740639891082,0.5302235500760575,,,,Thresholds fit on train tracks only; splits by track_id.
+random_forest,static,spectral_aggregated,emotion_quadrant,test,1261,270,271,0.6088560885608856,0.37611666706494296,0.5253220372192252,,,,Thresholds fit on train tracks only; splits by track_id.
+gradient_boosting,static,spectral_aggregated,emotion_quadrant,val,1261,270,271,0.6111111111111112,0.41043331898125845,0.549405616213729,,,,Thresholds fit on train tracks only; splits by track_id.
+gradient_boosting,static,spectral_aggregated,emotion_quadrant,test,1261,270,271,0.5719557195571956,0.37924442329464164,0.5177630110194282,,,,Thresholds fit on train tracks only; splits by track_id.
+xgboost,static,spectral_aggregated,emotion_quadrant,val,1261,270,271,0.6407407407407407,0.446118553129497,0.5794255959372239,,,,Thresholds fit on train tracks only; splits by track_id.
+xgboost,static,spectral_aggregated,emotion_quadrant,test,1261,270,271,0.5682656826568265,0.3632571690198969,0.5019192160258219,,,,Thresholds fit on train tracks only; splits by track_id.
+mlp,static,spectral_aggregated,emotion_quadrant,val,1261,270,271,0.6037037037037037,0.44665494043123777,0.5672353541217496,,,,Thresholds fit on train tracks only; splits by track_id.
+mlp,static,spectral_aggregated,emotion_quadrant,test,1261,270,271,0.5793357933579336,0.4082280819646361,0.5408735337704802,,,,Thresholds fit on train tracks only; splits by track_id.

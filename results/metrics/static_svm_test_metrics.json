@@ -1,0 +1,56 @@
+{
+  "model_name": "svm",
+  "task_type": "static",
+  "feature_type": "spectral_aggregated",
+  "target_type": "emotion_quadrant",
+  "eval_split": "test",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.6125461254612546,
+  "macro_f1": 0.3658637965205902,
+  "weighted_f1": 0.5232814431205313,
+  "mae": null,
+  "rmse": null,
+  "r2": null,
+  "comments": "Thresholds fit on train tracks only; splits by track_id.",
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.61      0.82      0.70       102\n          Q2       0.50      0.03      0.05        38\n          Q3       0.00      0.00      0.00        35\n          Q4       0.61      0.84      0.71        96\n\n    accuracy                           0.61       271\n   macro avg       0.43      0.42      0.37       271\nweighted avg       0.52      0.61      0.52       271\n",
+  "confusion_matrix": [
+    [
+      84,
+      0,
+      0,
+      18
+    ],
+    [
+      20,
+      1,
+      0,
+      17
+    ],
+    [
+      18,
+      1,
+      0,
+      16
+    ],
+    [
+      15,
+      0,
+      0,
+      81
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "label_classes": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

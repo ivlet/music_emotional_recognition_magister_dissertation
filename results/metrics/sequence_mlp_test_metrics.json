@@ -1,0 +1,47 @@
+{
+  "model_name": "mlp",
+  "task_type": "sequence",
+  "feature_type": "mfcc_sequence",
+  "target_type": "emotion_quadrant",
+  "eval_split": "test",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.6051660516605166,
+  "macro_f1": 0.39103951400753945,
+  "weighted_f1": 0.5311108849433626,
+  "best_val_macro_f1": 0.3985389786993321,
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.59      0.80      0.68       102\n          Q2       0.57      0.11      0.18        38\n          Q3       0.00      0.00      0.00        35\n          Q4       0.62      0.81      0.71        96\n\n    accuracy                           0.61       271\n   macro avg       0.45      0.43      0.39       271\nweighted avg       0.52      0.61      0.53       271\n",
+  "confusion_matrix": [
+    [
+      82,
+      3,
+      0,
+      17
+    ],
+    [
+      16,
+      4,
+      0,
+      18
+    ],
+    [
+      23,
+      0,
+      0,
+      12
+    ],
+    [
+      18,
+      0,
+      0,
+      78
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

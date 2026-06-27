@@ -1,0 +1,47 @@
+{
+  "model_name": "gru",
+  "task_type": "sequence",
+  "feature_type": "mfcc_sequence",
+  "target_type": "emotion_quadrant",
+  "eval_split": "val",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.6148148148148148,
+  "macro_f1": 0.5062409626479978,
+  "weighted_f1": 0.600610761945212,
+  "best_val_macro_f1": 0.5062409626479978,
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.67      0.75      0.70       102\n          Q2       0.36      0.27      0.31        37\n          Q3       0.36      0.26      0.30        35\n          Q4       0.69      0.74      0.71        96\n\n    accuracy                           0.61       270\n   macro avg       0.52      0.50      0.51       270\nweighted avg       0.59      0.61      0.60       270\n",
+  "confusion_matrix": [
+    [
+      76,
+      8,
+      8,
+      10
+    ],
+    [
+      11,
+      10,
+      2,
+      14
+    ],
+    [
+      16,
+      2,
+      9,
+      8
+    ],
+    [
+      11,
+      8,
+      6,
+      71
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}

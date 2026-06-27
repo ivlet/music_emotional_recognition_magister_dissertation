@@ -1,0 +1,56 @@
+{
+  "model_name": "gradient_boosting",
+  "task_type": "static",
+  "feature_type": "spectral_aggregated",
+  "target_type": "emotion_quadrant",
+  "eval_split": "val",
+  "train_size": 1261,
+  "val_size": 270,
+  "test_size": 271,
+  "accuracy": 0.6111111111111112,
+  "macro_f1": 0.41043331898125845,
+  "weighted_f1": 0.549405616213729,
+  "mae": null,
+  "rmse": null,
+  "r2": null,
+  "comments": "Thresholds fit on train tracks only; splits by track_id.",
+  "classification_report": "              precision    recall  f1-score   support\n\n          Q1       0.62      0.81      0.71       102\n          Q2       0.33      0.08      0.13        37\n          Q3       0.29      0.06      0.10        35\n          Q4       0.64      0.80      0.71        96\n\n    accuracy                           0.61       270\n   macro avg       0.47      0.44      0.41       270\nweighted avg       0.54      0.61      0.55       270\n",
+  "confusion_matrix": [
+    [
+      83,
+      4,
+      4,
+      11
+    ],
+    [
+      12,
+      3,
+      1,
+      21
+    ],
+    [
+      21,
+      0,
+      2,
+      12
+    ],
+    [
+      17,
+      2,
+      0,
+      77
+    ]
+  ],
+  "labels": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "label_classes": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ]
+}
